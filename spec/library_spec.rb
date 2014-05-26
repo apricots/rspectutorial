@@ -18,7 +18,7 @@ describe "Library object" do
     before :each do
         @lib = Library.new "books.yml"
     end
-    
+
     describe "#new" do
  
         context "with no parameters" do
@@ -27,6 +27,7 @@ describe "Library object" do
                 lib.should have(0).books
             end
         end
+        
         context "with a yaml file parameter" do
             it "has five books" do
                 @lib.should have(5).books
